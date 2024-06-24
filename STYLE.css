@@ -1,0 +1,566 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: black;
+}
+
+.head {
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 30px;
+    position:relative;
+}
+
+.head>nav {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 1px;
+    margin-bottom: 50px;
+}
+
+.head nav a {
+    color: azure;
+}
+
+.head nav a:hover {
+    transition: 0.2s all ease-out;
+    color: rgb(11, 244, 225);
+}
+
+.btn2 {
+    border: 2px solid white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1em;
+    width: 120px;
+    background-color: transparent;
+    color: azure;
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    margin-top: -30px;
+    margin-left: 500px;
+}
+
+.head button:hover {
+    background-color: aquamarine;
+    box-shadow: 0 0 30px 5px;
+    transition: 0.2s all ease-out;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vmax;
+    margin-top: 20px;
+    color: azure;
+}
+
+h4 {
+    color: azure;
+    font-size: 25px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    font-family: inherit;
+}
+
+.bar {
+    border: 2px solid white;
+    height: 25px;
+    width: 30%;
+    margin-top: 25px;
+    background-color: white;
+    animation: progress 0s ease alternate both;
+    animation-duration: 7s;
+    transition: 0.4s linear;
+
+}
+
+.btn button {
+    margin-top: 30px;
+    height: 38px;
+    width: 150px;
+    font-size: 15px;
+    background-color: transparent;
+    color: azure;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 7px;
+    border: 2px solid white;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.btn button:hover {
+    background-color: aquamarine;
+    box-shadow: 0 0 30px 5px rgba(0,cyan, rgba(19, 204, 255, 0.963),0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: 0.2s all ease-out;
+}
+.btn button:hover::before{
+   -webkit-animation: butt 0.5 0s linear;
+   -moz-animation: butt 0.5s 0s linear;
+   animation: butt 0.5s 0s linear;
+}
+.btn button::before{
+   content: normal;
+   display: block;
+   width: 0px;
+   height: 86px;
+   opacity: 0;
+   background: #fff;
+   box-shadow: 0 0 50px 30px #fff;
+   -webkit-transform: skewX(-20deg);
+   -moz-transform: skewX(-20deg);
+   -ms-transform: skewX(-20deg);
+   transform: skewX(-20deg);
+}
+@keyframes butt{
+   from{
+       opacity: 0;
+       left: 0%;
+   }
+   50%{
+       opacity: 1;
+   }
+   to{
+       opacity: 0;
+       left: 100%;
+   }
+}
+
+button:active{
+   box-shadow: 0 0 0 0 transparent;
+   transition:box-shadow 0.2s ease-in;
+   -webkit-transition:box-shadow 0.2s ease-in;
+   -moz-transition: box-shadow 0.2s ease-in;
+  
+}
+
+#media {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 1200px;
+    justify-content: space-around;
+}
+
+.m img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 2px solid white;
+    color: azure;
+    background-color: azure;
+
+}
+
+.line {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    border: 1px solid white;
+    animation: line 1s ease alternate both;
+    animation-duration: 7s;
+    transition: 0.4s linear;
+}
+
+
+.desc p{
+   overflow:hidden;
+}
+
+.head2 {
+    margin-top: 150px;
+    font-size: 50px;
+}
+
+.mid {
+    font-size: 25px;
+    word-spacing: 15px;
+}
+
+.dsa {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dsa>h2 {
+    font-size: 30px;
+}
+
+.topics {
+    width: 250px;
+    height: 200px;
+    border: 1px solid white;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 15px 15px 15px 15px;
+    background-image: linear-gradient(rgb(41, 239, 249), black);
+    color: azure;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+
+}
+
+.frontend {
+
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.frontend>h2 {
+    font-size: 30px;
+}
+
+.frontend .topics1 {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    border: 1px solid white;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 15px 15px 15px 15px;
+    background-image: linear-gradient(rgb(54, 223, 242), black);
+    color: azure;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.backend {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.backend>h2 {
+    font-size: 30px;
+}
+
+.backend .topics2 {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    border: 1px solid white;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 15px 15px 15px 15px;
+    background-image: linear-gradient(rgb(64, 242, 251), black);
+    color: azure;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.tutorial {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.tutorial>h2 {
+    font-size: 30px;
+}
+
+.tutorial .tut {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    border: 1px solid white;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 15px 15px 15px 15px;
+    background-image: linear-gradient(rgb(57, 239, 255), black);
+    color: azure;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+.dsa,.backend,.frontend,.tutorial{
+   margin-left: -100px;
+}
+.last {
+   margin-top: 50px;
+   font-size: 22px;
+   color:azure;
+   margin-left: 500px;
+}
+.end{
+   background-color:transparent;
+   backdrop-filter:blur(25px);
+   box-shadow: 20px 20px 60px #adabab73,inset -20px -20px 60px #1f1c1c23;
+}
+.end footer{
+   width: 100%;
+   height:500px;
+   margin-top: 50px;
+   color:azure;
+  
+}
+#stay{
+   font-size:40px;
+   margin-top: 80px;
+   margin-left: 120px;
+   margin-bottom: 50px;
+   padding-top: 30px;
+}
+.end footer section{
+   margin-left: 600px;
+}
+#web{
+   margin-left: 630px;
+   font-size: 20px;
+}
+#address{
+   font-size: 18px;
+   margin-left: 100px;
+}
+#email{
+   font-size: 20px;
+   margin-left: 120px;
+   margin-top: 50px;
+}
+#email>h2{
+   margin-bottom: 30px;
+}
+#mail>h1{
+   font-size: 35px;
+   margin-bottom: 30px;
+}
+
+.end #mail input{
+   width: 40%;
+   height: 30px;
+   background-color: transparent;
+   outline: none;
+   border: 1px solid white;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   cursor: pointer;
+}
+
+#ebtn{
+    outline: none;
+}
+
+.end #mail button{
+   width: 107px;
+   height: 3em;
+   background-color: rgba(53, 110, 163, 0.685);
+   border-radius: 10px 10px 10px 10px;
+   transition:0.2s linear;
+   border: 2px solid white;
+}
+.end #mail button:hover{
+ background-color: black;
+ color: azure;
+}
+
+ .backgrd{
+   width: 115vw;
+   position:relative;
+   height: 510px;
+   margin-top: 80px;
+   background-image: linear-gradient(rgba(5, 5, 5, 0.957),rgba(51, 237, 247, 0.87),rgba(10, 9, 9, 0.952));
+ }
+@keyframes progress {
+    0% {
+        width: 0%;
+        background-color: grey;
+    }
+
+    100% {
+        width: 100%;
+        background-color: rgb(20, 173, 184);
+    }
+}
+
+@keyframes line {
+    0% {
+        width: 0%;
+        background-color: black;
+    }
+
+    100% {
+        width: 100%;
+        background-color: azure;
+    }
+}
+
+.part{
+    width: 100vw;
+    margin-left:50px;
+}
+@media only screen and (max-width:1035px){
+    #navbar li a{padding: 15px;}
+}
+
+@media only screen and (max-width: 767px) {
+  .main h1{
+    font-size:35px;
+    margin-left: -10px;
+  }
+  .head{
+    font-size: 17px;
+    padding-left: 20px;
+    margin-left:0em;
+  }
+  #navbar{
+    font-size: 17px;
+    padding-left:15px;
+    margin-right: 50px;
+  }
+  #navbar li a{
+    padding-left:15px;
+  }
+  #media{
+    width: 50px;
+    margin-right: 415px;
+  } 
+  #media .m a img{
+    width: 85px;
+    height: 85px;
+}
+.backgrd{
+  position: fixed;
+  display: none;
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+#media .m{
+    margin-left: 17px;
+}
+  .about,.img1,.img2{
+    display: none;
+  }
+  .head2 {
+    margin-top:10px;
+    font-size: 35px;
+  }
+  .head2 h3{
+    margin-left: 68px;
+  }
+  .speaker{
+    margin-right: 100px;
+  }
+  .desc{
+    overflow: hidden;
+  }
+  .mid{
+    font-size: 20px;
+  }
+  .head #navbar .btn2{
+    margin-left:-10px;
+    border: none;
+  }
+  .desc p{
+    font-size: 13px;
+}
+.desc{
+    width: 300px;
+}
+}
+
+@media only screen and (max-width:325px){
+    .head{
+        margin-left: -1em;
+    }
+    .container h4{
+        font-size: 18px;
+    }
+    #media .m a img{
+        width: 50px;
+        height: 50px;
+    }
+    #media{
+        margin-right: 250px;
+    }
+    #media .m{
+        margin-left: 17px;
+    }
+    .head2 h3{
+        margin-left:88px;
+        font-size: 28px;
+    }
+    .speaker{
+        width: 175px;
+        margin-left: 110px;
+    }
+    .speaker img{
+        width: 175px;
+        height: 185px;
+    }
+    
+    .mid h1{
+        font-size: 25px;
+    }
+    /* #copyright{
+        display:flex;
+    } */
+}
+
+@media only screen and (max-width:325px){
+    .topics,.frontend .topics1,.backend .topics2,.tutorial .tut{
+        width:175px;
+        height:125px;
+    }
+    .dsa .part{
+        height: 27px;
+        margin-left: 100px;
+        position: relative;
+    }
+    .end,.backgrd{
+        display: none;
+    }
+}
+
+/* #copyright{
+    display: none;
+    background-color: aqua;
+    color: black;
+    width: 100%;
+    height: 25px;
+} */

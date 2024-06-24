@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    color: azure;
+}
+
+h1{
+    padding: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size:xx-large;
+    margin-left:500px;
+}
+h1::selection{
+    background-color: azure;
+    color:black; 
+}
+h3{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+h3::selection{
+    background-color: azure;
+    color:black;
+}
+
+@media (max-width: 768px) {
+    
+    main {
+        padding: 1rem;
+    }
+}
+
+

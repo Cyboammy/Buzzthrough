@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+}
+body{
+    background-color:black ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+#heading{
+    position: relative;
+    text-shadow: 0px 0px 10px rgba(0,160,160,300);
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+#heading::selection{
+    background-color: azure;
+    color: black;
+}
+.container{
+    border: 1px solid rgba(131, 128, 128, 0.753);
+    height: 500px;
+    width: 300px;
+    border-radius: 30px 30px 30px 30px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter:blur(10px);
+    box-shadow: 20px 20px 60px #00000042,inset -20px -20px 60px #ffffff48;
+}
+#main_err{
+    margin-right: 50px;
+}
+.box input{
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    width:250px;
+    height:50px;
+    background-color: transparent;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.575); 
+    outline: none;
+}
+
+#btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: azure;
+    margin-left: 71px;
+}
+#btn:hover{
+    transition: 0.2s all ease-out;
+    box-shadow: 5px 5px 50px 0px;
+    color: rgb(7, 7, 7);
+}
+
+@media only screen and (max-width: 767px) {
+    #heading{
+        font-size:45px;
+    }
+    .box{
+        height: 460px;
+        width:300px;
+    }
+}

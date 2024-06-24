@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:grid;
+    place-items: center;
+}
+header>h1{
+    
+    color: azure;
+    font-size: 60px;
+    text-shadow: 0px 0px 10px rgba(0,160,160,300);
+}
+
+.container{
+    position: relative;
+    border: 1px solid rgba(131, 128, 128, 0.753);
+    height: 350px;
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter:blur(10px);
+    box-shadow: 20px 20px 60px #00000042,inset -20px -20px 60px #ffffff48;
+}
+
+#error{
+    margin-left: 50px;
+    display: none;
+}
+
+#input{
+    width: 19em;
+    height: 3em;
+    border-radius: 15px;
+    border: 1px solid azure;
+    margin-top: 90px;
+    margin-left: 19px;
+    outline: none;
+    background-color: transparent;
+   
+}
+
+#submit{
+    width: 9em;
+    height: 3em;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-left: 84px;
+    border: 1px solid azure;
+    outline: none;
+    background-color: transparent;
+}
+#submit:hover{
+    transition: 0.2s all ease-out;
+    box-shadow: 5px 5px 50px 0px;
+    color: rgba(8, 8, 8, 0.975);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+ header h1{
+    font-size: 45px;
+ }
+ .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+}
